@@ -1,31 +1,17 @@
 
-//takeOrder
-
 function takeOrder(newOrders, deliveryOrders) {
-  var newOrders;
-
-  if (newOrders.status === "accepted") {
-    deliveryOrders.slice(newOrders);
-  }
-
-  for(i = 0; i < deliveryOrders.length; i++) {
-    return deliveryOrders[i];
+  if (deliveryOrders.length < 3){
+    deliveryOrders.push(newOrders);
   }
 }
 
-  // refundOrder
-
-
-  // listItems
-
-
-  // searchOrder
-
-
+function refundOrder() {
+  
+}
 
 module.exports = {
   takeOrder,
-  // refundOrder,
+  refundOrder,
   // listItems,
   // searchOrder
 }
