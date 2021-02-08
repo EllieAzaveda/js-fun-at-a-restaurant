@@ -20,8 +20,10 @@ function addMenuItem(restaurantName, menuItem) {
   }
 }
 
-function removeMenuItem(estaurantName, menuItem) {
-
+function removeMenuItem(restaurantName, menuItem, type) {
+  for (var i = 0; i < restaurantName.length; i++) {
+    restaurantName.menus[chooseMenu].slice(menuItem);
+  }
 }
 
 module.exports = {
