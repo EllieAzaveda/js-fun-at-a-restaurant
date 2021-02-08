@@ -14,12 +14,18 @@ function createRestaurant(restaurantName) {
 
 function addMenuItem(restaurantName, menuItem) {
   var chooseMenu = menuItem.type;
-  restaurantName.menus[chooseMenu].push(menuItem);
+
+  if(!restaurantName.menus[chooseMenu].includes(menuItem)) {
+    restaurantName.menus[chooseMenu].push(menuItem);
+  }
 }
 
+function removeMenuItem(estaurantName, menuItem) {
+
+}
 
 module.exports = {
   createRestaurant,
   addMenuItem,
-  // removeMenuItem
+  removeMenuItem
 }
